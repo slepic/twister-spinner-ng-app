@@ -31,3 +31,15 @@ html, body {
   font-weight: 500%;
   color: #000000;
 }
+
+.twister-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.btn-twister-menu, .btn-twister-menu:visited, .btn-twister-menu:active, .btn-twister-menu:hover {
+  color: black;
+  background-color: transparent;
+  border: 3px solid black;
+}
