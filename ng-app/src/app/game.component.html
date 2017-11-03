@@ -1,13 +1,11 @@
 <twister-menu></twister-menu>
-<div class="container-fluid container-twister text-center">
-  <div class="btn btn-twister" (click)="randomize()" [ngStyle]="{'background-color':htmlColor}">
-    <div class="container-twister-image">
-      <img class="twister-image" [src]="imageUrl" />
-    </div>
-    <div class="container-twister-reset">
-      <div *ngIf="!isReset" class="btn btn-twister-reset" (click)="reset($event)">{{turnCounter}}</div>
-      <div *ngIf="isReset" class="btn btn-twister-reset">PLAY</div>
-    </div>
-  <div>
-</div>
+<div class="btn container-twister container-twister-game" (click)="randomize()" [ngStyle]="{'background-color':htmlColor}">
+  <div class="container-twister-image">
+    <img class="twister-image" [src]="imageUrl" />
+  </div>
+  <div class="container-twister-reset">
+    <div *ngIf="!isReset" class="btn btn-twister" (click)="reset($event)">{{turnCounter}}</div>
+    <div *ngIf="isReset" class="btn btn-twister">PLAY</div>
+  </div>
+<div>
 

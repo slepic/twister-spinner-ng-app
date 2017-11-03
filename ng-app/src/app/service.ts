@@ -38,7 +38,7 @@ export class TwisterService {
 
   colors:Color[] = [{
     name : "Red",
-    htmlColor : "purple"
+    htmlColor : "#ff0000"
   }, {
     name : "Green",
     htmlColor : "#00ff00"
@@ -47,7 +47,7 @@ export class TwisterService {
     htmlColor : "#0000ff"
   }, {
     name : "Yellow",
-    htmlColor : "orange"
+    htmlColor : "#ffff00"
   }]
 
   private rng:RNG;
@@ -65,9 +65,6 @@ export class TwisterService {
     var i = this.rng.getIntExc(this.colors.length);
     return this.colors[i];
   }
-}
-
-export class TwisterState {
 }
 
 @Injectable()

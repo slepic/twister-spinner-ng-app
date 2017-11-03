@@ -4,17 +4,21 @@ html, body {
   height: 100%;
 }
 
-.container-twister {
+.container-twister-app {
   width: 100%;
   height: 100%;
   padding: 5px;
 }
 
-.btn-twister {
+.container-twister {
   width: 100%;
-  height: 100%;
   border: 5px solid black;
   border-radius: 15px;
+  padding: 15px;
+}
+
+.container-twister-game {
+  height: 100%;
 }
 
 .container-twister-image {
@@ -36,7 +40,7 @@ html, body {
   height: 20%;
 }
 
-.btn-twister-reset, .btn-twister-reset:hover {
+.btn-twister, .btn-twister:hover {
   font-size: 300%;
   font-weight: 500%;
   color: #000000;
@@ -52,4 +56,12 @@ html, body {
   color: black;
   background-color: transparent;
   border: 3px solid black;
+}
+
+.btn-group-twister-setup {
+  margin-top: 20px;
+}
+
+.color-picker {
+  border-radius: 0px 0px 10px 10px;
 }

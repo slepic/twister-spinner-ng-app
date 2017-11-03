@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 
-import { TwisterService } from './service';
+import { TwisterService, Color } from './service';
 
 @Component({
   selector: 'twister-about',
   templateUrl: './setup.component.html'
 })
 export class TwisterSetupComponent {
-  color:string = '#ff0000'
+  colors: Color[]
 
-  constructor(private service:TwisterService) {}
+  constructor(private service:TwisterService) {
+    this.colors = this.service.colors;
+  }
 }
