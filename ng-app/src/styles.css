@@ -15,7 +15,12 @@ html, body {
   height: 100%;
   border: 5px solid black;
   border-radius: 15px;
-  padding: 10%;
+}
+
+.container-twister-image {
+  width: 100%;
+  height: 80%;
+  padding-top: 10%;
 }
 
 .twister-image {
@@ -23,10 +28,15 @@ html, body {
   max-height: 100%;
   min-height: 50px;
   max-width: 100%;
+  min-width: 50px;
 }
 
-.twister-turn-counter {
+.container-twister-reset {
   width: 100%;
+  height: 20%;
+}
+
+.btn-twister-reset, .btn-twister-reset:hover {
   font-size: 300%;
   font-weight: 500%;
   color: #000000;

@@ -1,8 +1,13 @@
 <twister-menu></twister-menu>
 <div class="container-fluid container-twister text-center">
   <div class="btn btn-twister" (click)="randomize()" [ngStyle]="{'background-color':htmlColor}">
-    <img class="twister-image" [src]="imageUrl" />
+    <div class="container-twister-image">
+      <img class="twister-image" [src]="imageUrl" />
+    </div>
+    <div class="container-twister-reset">
+      <div *ngIf="turnCounter>0" class="btn btn-twister-reset" (click)="reset($event)">{{turnCounter}}</div>
+      <div *ngIf="turnCounter==0" class="btn btn-twister-reset">PLAY</div>
+    </div>
   <div>
-  <div *ngIf="turnCounter>0" class="twister-turn-counter" (click)="reset($event)">{{turnCounter}}</div>
 </div>
 
