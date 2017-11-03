@@ -5,8 +5,8 @@
       <img class="twister-image" [src]="imageUrl" />
     </div>
     <div class="container-twister-reset">
-      <div *ngIf="turnCounter>0" class="btn btn-twister-reset" (click)="reset($event)">{{turnCounter}}</div>
-      <div *ngIf="turnCounter==0" class="btn btn-twister-reset">PLAY</div>
+      <div *ngIf="!isReset" class="btn btn-twister-reset" (click)="reset($event)">{{turnCounter}}</div>
+      <div *ngIf="isReset" class="btn btn-twister-reset">PLAY</div>
     </div>
   <div>
 </div>
